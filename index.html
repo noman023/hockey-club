@@ -27,11 +27,111 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- custom tailwind styles -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "color-primary": "#FF4240",
+            },
+          },
+        },
+      };
+    </script>
+
     <style>
       body {
         font-family: "Manrope", sans-serif;
       }
     </style>
   </head>
-  <body></body>
+  <body>
+    <header class="container mx-5 lg:mx-auto">
+      <div class="lg:relative h-[550px] mb-32">
+        <!-- banner carousel -->
+        <div class="carousel w-full">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img
+              src="./images/banner.png"
+              class="w-full h-[550px] object-cover"
+            />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a
+                href="#slide3"
+                class="btn btn-circle bg-black text-white border-0 hover:bg-slate-800"
+                >❮</a
+              >
+              <a
+                href="#slide2"
+                class="btn btn-circle bg-black text-white border-0 hover:bg-slate-800"
+                >❯</a
+              >
+            </div>
+          </div>
+
+          <div id="slide2" class="carousel-item relative w-full">
+            <img
+              src="./images/banner-1.jpg"
+              class="w-full h-[550px] object-cover"
+            />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a
+                href="#slide1"
+                class="btn btn-circle bg-black text-white border-0 hover:bg-slate-800"
+                >❮</a
+              >
+              <a
+                href="#slide3"
+                class="btn btn-circle bg-black text-white border-0 hover:bg-slate-800"
+                >❯</a
+              >
+            </div>
+          </div>
+
+          <div id="slide3" class="carousel-item relative w-full">
+            <img
+              src="./images/banner-2.jpg"
+              class="w-full h-[550px] object-cover"
+            />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a
+                href="#slide2"
+                class="btn btn-circle bg-black text-white border-0 hover:bg-slate-800"
+                >❮</a
+              >
+              <a
+                href="#slide1"
+                class="btn btn-circle bg-black text-white border-0 hover:bg-slate-800"
+                >❯</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- banner badge -->
+        <div
+          class="lg:w-[500px] bg-black text-white p-8 rounded-2xl lg:absolute lg:bottom-8 lg:right-8 mt-5"
+        >
+          <h3 class="text-2xl font-extrabold mb-4">
+            Meet all the heroes from the field
+          </h3>
+          <p class="text-gray-300">
+            Meet our heroic players. they fight for win every match. they don't
+            let opponent to play easily.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main></main>
+
+    <footer></footer>
+  </body>
 </html>
