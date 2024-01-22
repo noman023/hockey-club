@@ -34,6 +34,8 @@
           extend: {
             colors: {
               "color-primary": "#FF4240",
+              "color-black": "#131318",
+              "color-gray": "rgba(19, 19, 24, 0.9)",
             },
           },
         },
@@ -46,11 +48,12 @@
       }
     </style>
   </head>
+
   <body>
-    <header class="container mx-5 lg:mx-auto">
-      <div class="lg:relative h-[550px] mb-32">
+    <header class="container px-5 lg:mx-auto mb-32">
+      <div class="lg:relative lg:h-[550px]">
         <!-- banner carousel -->
-        <div class="carousel w-full">
+        <div class="carousel w-full rounded-2xl">
           <div id="slide1" class="carousel-item relative w-full">
             <img
               src="./images/banner.png"
@@ -130,7 +133,103 @@
       </div>
     </header>
 
-    <main></main>
+    <main class="container px-5 lg:mx-auto">
+      <!-- Professional Hockeys Club start -->
+      <section class="mb-32">
+        <div class="text-center mb-20">
+          <h2 class="text-color-black text-4xl font-extrabold mb-6">
+            Professional Hockeys Club
+          </h2>
+          <p class="text-color-gray lg:w-1/2 lg:mx-auto">
+            We are a professional hockey club. we have all those facilities that
+            a professional club generally have. we believe in quality
+            performance.
+          </p>
+        </div>
+
+        <!-- progress container -->
+        <div class="flex flex-col gap-10 lg:flex-row">
+          <!-- progress 1 -->
+          <div class="text-center">
+            <div
+              class="radial-progress text-color-primary"
+              style="--value: 87; --size: 10rem; --thickness: 14px"
+              role="progressbar"
+            >
+              <span class="text-color-black text-3xl font-extrabold">87%</span>
+            </div>
+
+            <h4 class="text-color-black text-xl font-bold my-5">
+              Prayer Facility
+            </h4>
+
+            <p class="text-color-gray">
+              we have a lot of facilities for our player, we care for them
+            </p>
+          </div>
+
+          <!-- progress 2 -->
+          <div class="text-center">
+            <div
+              class="radial-progress text-[#49D293]"
+              style="--value: 95; --size: 10rem; --thickness: 14px"
+              role="progressbar"
+            >
+              <span class="text-color-black text-3xl font-extrabold">95%</span>
+            </div>
+
+            <h4 class="text-color-black text-xl font-bold my-5">
+              Experienced Coach
+            </h4>
+
+            <p class="text-color-gray">
+              we have an experienced coached for all our age level teams. we
+              never compromise in performance.
+            </p>
+          </div>
+
+          <!-- progress 3 -->
+          <div class="text-center">
+            <div
+              class="radial-progress text-[#FFB546]"
+              style="--value: 90; --size: 10rem; --thickness: 14px"
+              role="progressbar"
+            >
+              <span class="text-color-black text-3xl font-extrabold">90%</span>
+            </div>
+
+            <h4 class="text-color-black text-xl font-bold my-5">
+              Senior Player
+            </h4>
+
+            <p class="text-color-gray">
+              we have a lot of senior player for our club. whom are best at
+              their position.
+            </p>
+          </div>
+
+          <!-- progress 4 -->
+          <div class="text-center">
+            <div
+              class="radial-progress text-[#4C8DF1]"
+              style="--value: 80; --size: 10rem; --thickness: 14px"
+              role="progressbar"
+            >
+              <span class="text-color-black text-3xl font-extrabold">80%</span>
+            </div>
+
+            <h4 class="text-color-black text-xl font-bold my-5">
+              Training Ground
+            </h4>
+
+            <p class="text-color-gray">
+              we have a best tarining ground in the world we can say that.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Professional Hockeys Club end -->
+    </main>
 
     <footer></footer>
   </body>
