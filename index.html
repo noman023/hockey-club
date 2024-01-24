@@ -52,6 +52,93 @@
 
   <body>
     <header class="container px-5 lg:mx-auto mb-32">
+      <nav class="my-10">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <!-- hamburg icon for small devices -->
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li class="hover:text-color-primary">
+                  <a> Home </a>
+                </li>
+                <li class="hover:text-color-primary">
+                  <a>About</a>
+                </li>
+                <li class="hover:text-color-primary">
+                  <a>Pages</a>
+                </li>
+                <li class="hover:text-color-primary">
+                  <a>Blogs</a>
+                </li>
+                <li class="hover:text-color-primary">
+                  <a>Contact</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- nav title -->
+            <a href="#" class="text-color-black text-4xl font-extrabold"
+              >Hockey<span class="text-color-primary">’</span>s</a
+            >
+          </div>
+
+          <!-- nav links -->
+          <div class="navbar-center hidden lg:flex">
+            <ul
+              class="flex space-x-10 px-1 text-[#424247] font-bold cursor-pointer"
+            >
+              <li class="hover:text-color-primary">
+                <a> Home </a>
+              </li>
+              <li class="hover:text-color-primary">
+                <a>About</a>
+              </li>
+              <li class="hover:text-color-primary">
+                <a>Pages</a>
+              </li>
+              <li class="hover:text-color-primary">
+                <a>Blogs</a>
+              </li>
+              <li class="hover:text-color-primary">
+                <a>Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="navbar-end cursor-pointer">
+            <i
+              class="fa-solid fa-magnifying-glass hidden lg:block mr-6 text-xl"
+            ></i>
+
+            <a
+              class="bg-color-primary text-xl text-white font-bold py-4 px-6 rounded-xl"
+              >Button</a
+            >
+          </div>
+        </div>
+      </nav>
+
+      <!-- banner section -->
       <div class="lg:relative lg:h-[550px]">
         <!-- banner carousel -->
         <div class="carousel w-full rounded-2xl">
